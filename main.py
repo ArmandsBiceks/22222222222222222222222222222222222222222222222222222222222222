@@ -10,8 +10,7 @@ def izmaksas_receptei(recepte,cenas):
  return summa
 
 def izmaksas_kopa(abolu_svars, recepte, cenas):
-  izmaksas_kg = izmaksas_receptei(recepte, cenas)
-  /recepte["aboli"]
+  izmaksas_kg = izmaksas_receptei(recepte, cenas)/recepte["aboli"]
 
   ievarijuma_izmaksas = abolu_svars* izmaksas_kg
   return ievarijuma_izmaksas
