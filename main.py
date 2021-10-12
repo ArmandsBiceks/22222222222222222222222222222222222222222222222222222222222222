@@ -1,17 +1,40 @@
-recepte1 = {"cukurs":2.22, "kaneles":1.53, "aboli":5.22, "udens":0.50}
-cenas1 ={'cukurs':2.22, 'kaneles':1.53, 'aboli':5.22, 'udens':0.50}
+'''
+ARMANDS
+12.10.21
+'''
+"""
+sakas_vienadi("Liela Lama") -----> True
+sakas_vienadi("Maza Lama") ------> False
+"""
 
-def izmaksas_receptei(recepte,cenas):
+"""
+Noderīgas metodes:
 
- summa=0
- for sastavdala in recepte:
-  daudzums = recepte[sastavdala]
-  summa += daudzums* cenas[sastavdala]
- return summa
+.split()
+.lower()
+"""
+def vienadi(teksts):
+  teksts = teksts.lover().split()
+  if teksts[1][0]:
+    return True
+  else:
+    return False
+print(vienadi(teksts)):
+def vienadi(teksts):
+  teksts = teksts.lower().split()
 
-def izmaksas_kopa(abolu_svars, recepte, cenas):
-  izmaksas_kg = izmaksas_receptei(recepte, cenas)/recepte["aboli"]
+  if teksts[0][0] == teksts[1][0]:
+    return True
+  else:
+    return False
 
-  ievarijuma_izmaksas = abolu_svars* izmaksas_kg
-  return ievarijuma_izmaksas
-  print(izmaksas_kopa(15.0,recepte1,cenas1))
+print(vienadi("Liela Lama"))
+print(vienadi("Maza Lama"))
+
+def vienadi(teksts):
+  teksts = teksts.lower().split()
+
+  return teksts[0][0] == teksts[1][0]
+
+print(vienadi("Liela Lama"))
+print(vienadi("Maza Lama"))
